@@ -48,12 +48,12 @@ In the left there are the two tables that they will act as a **staging tables**.
 
 In addition to the data files, the project workspace includes six files:
 
-1. [dwh_template.cfg]('dwh.cfg') file in where we store the AWS credentials and the Redshift configuration.
-2. [sql_queries.py]('sql_queries.py') contains all the SQL queries to DROP and CREATE the tables in the Redshift cluster and also the SQL queries to move the data from S3 to the staging tables in Redshift and from there to the dimensional tables.
-3. [create_tables.py]('create_tables.ipynb') file that creates the tables in the Redshift cluster and if the tables exist it will drop them first
-4. [etl.py]('./etl.py') reads and processes the files from S3 and loads them into the Redshift cluster.
-5. [setup_database.ipynb]('setup_database.ipynb') main file in this project that creats the Redshift cluster using the boto3 package (IaaC) and then it runs the two scripts (create_tables.py,etl.py) for creating the tables in the Redshift cluster and later put the data.
-6. [README.md]('./README.md') provides discussion on your project.
+1. [dwh_template.cfg](dwh.cfg) file in where we store the AWS credentials and the Redshift configuration.
+2. [sql_queries.py](sql_queries.py) contains all the SQL queries to DROP and CREATE the tables in the Redshift cluster and also the SQL queries to move the data from S3 to the staging tables in Redshift and from there to the dimensional tables.
+3. [create_tables.py](create_tables.ipynb) file that creates the tables in the Redshift cluster and if the tables exist it will drop them first
+4. [etl.py](etl.py) reads and processes the files from S3 and loads them into the Redshift cluster.
+5. [setup_database.ipynb](setup_database.ipynb) main file in this project that creats the Redshift cluster using the boto3 package (IaaC) and then it runs the two scripts (create_tables.py,etl.py) for creating the tables in the Redshift cluster and later put the data.
+6. [README.md](README.md) provides discussion on your project.
 
 ## Installation
 
