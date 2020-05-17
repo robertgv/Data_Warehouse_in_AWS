@@ -40,6 +40,8 @@ The visual design of the **star schema** of the database is the following:
 
 ![Database design](img/db_design.png)
 
+This visual design was created in the website [dbdiagram.io](https://dbdiagram.io).
+
 In the left there are the two tables that they will act as a **staging tables**.
 
 ## Project structure
